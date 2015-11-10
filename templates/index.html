@@ -24,13 +24,22 @@
 		</div>
 		<div id='login'>
 			<h1>LOGIN</h1>
-			<form>
+			<form action='sign_in' method = 'POST'>
 				<p>Email:</p>
 				<input type='text' name='loginEmail'>
 				<p>Password:</p>
 				<input type-'password' name='loginPassword'>
 				<button>SIGN IN</button>
 			</form>
+		</div>
+		<div id='error-messages'>
+			{% with messages = get_flashed_messages() %}
+				{% if messages %}
+					{% for message in messages %}
+						<p class='error'>{{message}}</p>
+					{% endfor %}
+				{% endif %}
+			{% endwith %}
 		</div>
 	</div>
 </body>

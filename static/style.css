@@ -43,4 +43,6 @@ button {
 	margin-top: 171px;
 	background-color: LimeGreen;
 }
-
+.error {
+	color: red;
+}
