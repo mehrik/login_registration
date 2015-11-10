@@ -8,10 +8,10 @@
 	<div id='wrapper'>
 		{% if page == 'register' %}
 			<h1>SUCCESS!</h1>
-			<p><span>{{first_name}} {{last_name}}</span>, you have successfully registered: <span>[{{youremail}}]</span> to our database!</p>
+			<p><span>{{first_name}}</span>, you have successfully registered: <span>[{{youremail}}]</span> to our database!</p>
 			<h2>Thank you!</h2>
 		{% else %}
-			<h1>WELCOME BACK!</h1>
+			<h1>WELCOME BACK <span>{{first_name}}</span>!</h1>
 			<p>You have logged in as: <span>[{{youremail}}]</span></p>
 		{% endif %}
 	</div>
